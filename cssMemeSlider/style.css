@@ -27,7 +27,7 @@ body {
 
 .slider_img {
   width: 100%;
-  height: auto;
+  height: 500px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -37,19 +37,18 @@ body {
 }
 
 .image_item {
-  width: 100%;
+  width: calc(100% / 1);
   height: 100%;
   display: flex;
-flex-shrink: 0;
+  flex-shrink: 0;
+
 }
 
 .image_item img {
-  width: 100%;
+  width: calc(100% / 1);
   height: 100%;
   object-fit: contain;
-  border: 1px solid rgb(49, 48, 48);
-  border-radius: 30px;
-
+ 
 }
 
 .controls_content {
@@ -104,5 +103,17 @@ flex-shrink: 0;
   height: 1em;
   border-radius: 50%;
   border: 0.0625em solid rgb(53, 52, 52);
-  background-color: rgb(240, 237, 244);
+  background-color: rgb(53, 52, 52);
 }
+
+#first{
+background-color: rgba(53, 52, 52,0);
+}
+
+.control_round:hover,
+.control_round:active,
+.control_round:focus,
+.control_item:target {
+  background-color: rgba(53, 52, 52,0);
+}
+
