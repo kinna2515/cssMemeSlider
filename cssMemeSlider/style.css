@@ -127,3 +127,18 @@ input[type="radio"]:checked + .text_item {
 .control_item:target {
   background-color: rgba(53, 52, 52, 0);
 }
+
+@media screen and (max-width: 768px) {
+ 
+  .controls_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 3em;
+    margin-top: 50px;
+  }
+
+}
+
